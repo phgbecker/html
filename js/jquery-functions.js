@@ -29,7 +29,7 @@ $(document).ready(function() {
             return;
         }
 
-        // If got this far, give the use a sign in message
+        // If got this far, give the user a sign in message
         $('#signInValidation').text('Login successful!').show().fadeOut(3000);
     });
 

@@ -22,7 +22,7 @@ form {
 input[type=text], input[type=password] {
     width: 60%;
     margin: 10px 5px 0 5px;
-    padding: 5px;
+    padding: 7px 5px;
     border-radius: 5px;
     border: 1px solid #999999;
 }
@@ -34,7 +34,7 @@ input[type=button], input[type=submit] {
     margin-top: 20px;
 }
 input[type=button]:hover, input[type=submit]:hover {
-    font-weight: bold;    
+    font-weight: bold;
 }
 input:hover {
     background-color: #fdfdd3;
@@ -42,6 +42,12 @@ input:hover {
 .validationMsg {
     height: 15px;
     font-style: italic;
+}
+#usernameInput {
+    background: url('./images/user.png') no-repeat right;
+}
+#passwordInput {
+    background: url('./images/lock.png') no-repeat right;
 }
 #usernameValidation, #passwordValidation, #signInValidation {
     height: 15px;
