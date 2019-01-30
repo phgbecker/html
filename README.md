@@ -1,3 +1,3 @@
-# HTML, CSS, and JQuery
+# HTML, CSS, and JQuery assignment
 
 - A mockup "sign in page"
