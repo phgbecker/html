@@ -2,7 +2,7 @@ $(document).ready(function() {
     // Fade in the signIn div
     $('#signInBox').fadeIn(500);
 
-    $('#signInAction').submit(function (event) {
+    $('#signInForm').submit(function (event) {
         // Consume the default event
         event.preventDefault();
 
@@ -30,7 +30,12 @@ $(document).ready(function() {
         }
 
         // If got this far, give the user a sign in message
-        $('#signInValidation').text('Login successful!').show().fadeOut(3000);
+        $('#signInValidation').text('Login successful!').show().fadeOut(2500);
+
+        setTimeout(function() {
+            $('#signInForm')[0].reset();
+        }, 2500);
+        
     });
 
 });

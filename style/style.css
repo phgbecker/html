@@ -4,7 +4,8 @@ body {
     font-size: 14px;
 }
 #signInBox {
-    border: 1px solid #999999;
+    border: 1px dashed #999999;
+    background-color: white;
     border-radius: 10px;
     max-width: 320px;
     margin: 5% auto;
@@ -29,25 +30,33 @@ input[type=text], input[type=password] {
 input[type=button], input[type=submit] {
     width: 30%;
     border-radius: 5px;
-    border: 1px solid green;
+    border: 1px solid #336699;
+    background-color: #336699;
+    color: white;
     padding: 5px;
     margin-top: 20px;
 }
 input[type=button]:hover, input[type=submit]:hover {
-    font-weight: bold;
+    background-color: darkgreen;
+    border: 1px solid black;
 }
-input:hover {
-    background-color: #fdfdd3;
+input[type=button]:hover {
+    background-color: #b90404;
 }
 .validationMsg {
-    height: 15px;
+    height: 10px;
+    font-size: 13px;
     font-style: italic;
+    margin-top: 2px;
 }
 #usernameInput {
-    background: url('./images/user.png') no-repeat right;
+    background: url('../images/user.png') no-repeat right;
 }
 #passwordInput {
-    background: url('./images/lock.png') no-repeat right;
+    background: url('../images/lock.png') no-repeat right;
+}
+#usernameInput:hover, #passwordInput:hover {
+    background-color: #fdfdd3;
 }
 #usernameValidation, #passwordValidation, #signInValidation {
     height: 15px;
@@ -59,4 +68,17 @@ input:hover {
 #signInValidation {
     color: green;
     font-weight: bold;
+}
+@media only screen and (max-width: 600px) {
+    #screenMediaWrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #screenMediaWrapper > input {        
+        width: 60%;
+        margin: 5px auto;
+    }
+}
+.successfulBackground {
+    background-color: green;
 }
